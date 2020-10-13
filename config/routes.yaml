@@ -1,0 +1,31 @@
+# PRODUCT ROUTES #
+
+createProduct:
+   path: /createProduct
+   controller: App\Controller\ProductController::createProduct
+   methods: [POST]
+
+list:
+   path: /list
+   controller: App\Controller\ProductController::listProducts
+   methods: [POST]
+
+listbyPriceAsc:
+   path: /list/priceAsc
+   controller: App\Controller\ProductController::listbyPriceAsc
+   methods: [POST]
+
+listbyPriceDesc:
+   path: /list/priceDesc
+   controller: App\Controller\ProductController::listbyPriceDesc
+   methods: [POST]
+
+listbyVatType:
+   path: /list/vatType
+   controller: App\Controller\ProductController::listbyVatType
+   methods: [POST]
+
+listbyText:
+   path: /list/text
+   controller: App\Controller\ProductController::listbyText
+   methods: [POST]
